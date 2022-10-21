@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+body {
+  background-color: #EEF9BF;
+  font-family: Roboto;
+}
+
+.carta {
+  background-color: #A7E9AF;
+  height: 115px;
+  width: 92px;
+
+  border-radius: 5px;
+  border: 1px filled #99CEA8;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.carta img {
+  height: 85px;
+  width: 85px;
+}
+
+.espaco-cartas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.topo {
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.topo h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 66px;
+  color: #75B79E;
+
+}
