@@ -6,19 +6,26 @@ body {
 }
 
 .carta {
-  background-color: #A7E9AF;
   height: 115px;
   width: 92px;
 
-  border-radius: 5px;
-  border: 1px filled #99CEA8;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   margin-left: 15px;
   margin-top: 10px;
+
+  position: relative;
+
+}
+
+.verso {
+  transform: rotateY(180deg);
+}
+
+.virar .verso {
+  transform: rotateY(0deg);
+}
+
+.virar .frente {
+  transform: rotateY(-180deg);
 }
 
 .carta img {
@@ -32,6 +39,26 @@ body {
   justify-content: center;
 
 }
+
+.face {
+  background-color: #A7E9AF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+
+  transition: all 1s;
+  transform-style: preserve-3d;
+
+
+  border-radius: 5px;
+  border: 1px filled #99CEA8;
+}
+
+
 
 .topo {
   height: 85px;
