@@ -61,10 +61,11 @@ body {
 
 
 .topo {
-  height: 85px;
+  min-height: 85px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  flex-wrap: wrap;
 }
 
 .topo h1 {
@@ -73,4 +74,11 @@ body {
   line-height: 66px;
   color: #75B79E;
 
+}
+
+@media (max-width: 614px) {
+  .topo h1 {
+    font-size: 36px;
+    line-height: 42px;
+  }
 }
